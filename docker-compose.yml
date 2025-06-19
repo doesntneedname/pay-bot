@@ -1,0 +1,8 @@
+services:
+  pay-bot:
+    build: .
+    container_name: pay-bot
+    env_file:
+      - .env
+    volumes:
+      - .:/app
